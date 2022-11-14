@@ -3,7 +3,6 @@ import React from 'react'
 import "./MetaHome.style.css"
 
 const MetaHome = (props) => {
-    console.log(props)
   return (
     <Card sx={{ maxWidth: 345 }} className="meta-card">
       <CardMedia

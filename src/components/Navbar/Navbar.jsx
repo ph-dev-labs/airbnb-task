@@ -13,7 +13,7 @@ const Navbar = () => {
              <MetaBnbLogo className="meta" />
         </Box>
      
-      <Box className="link-cont">
+      <Box className="link-cont" sx={{marginTop: "47px"}}>
         <Link className="links">Home</Link>
         <Link className="links">Place to stay</Link>
         <Link className="links">NFTS</Link>

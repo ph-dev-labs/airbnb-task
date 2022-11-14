@@ -18,21 +18,17 @@ const Homepage = () => {
       sx={{
         width: "100%",
         height: "100%",
-        display: "flex",
-        flexDirection: "column",
-        overflow: "hidden",
       }}
     >
       <Box
         sx={{
           display: "flex",
-          flexDirection: "row",
+          flexDirection: {lg:"row", sm: "column", xs: "column"},
           justifyContent: "space-evenly",
-          alignContent: "center",
         }}
         mt={5}
       >
-        <Box sx={{ width: "60%", transform: "translateX(30px)" }}>
+        <Box sx={{ width: {lg:"60%", sm: "100%", xs: "100%", md: "100%"}, transform: "translateX(30px)" }}>
           <Typography variant="h4" component="h5" className="desc-title">
             Rent a Place away from Home in the Metaverse
           </Typography>
@@ -55,9 +51,9 @@ const Homepage = () => {
           sx={{
             display: "flex",
             flexDirection: "row",
-            justifyContent: "space-evenly",
+            justifyContent: {lg: "space-around", sm: "space-evenly", xs: "space-evenly", md: "space-evenly"},
             alignContent: "center",
-            transform: "translateX(-50px)",
+            transform:{lg: "translateX(-70px)"},
             height: "480px",
           }}
           mt={5}
@@ -77,7 +73,7 @@ const Homepage = () => {
       </Box>
       <Box
         sx={{
-          width: "100vw",
+          width: "100%",
           height: "70px",
           display: "flex",
           flexDirection: "row",

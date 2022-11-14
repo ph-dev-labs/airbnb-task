@@ -7,13 +7,13 @@ import "./Navbar.style.css"
 
 const Navbar = () => {
   return (
-    <Box sx={{width: "95vw", height: "48px", margin: "auto", marginTop: "30px"}} className="navbar" >
+    <Box sx={{width: "95%", height: "48px", margin: "auto", marginTop: "30px"}} className="navbar" >
         <Box sx={{display: "flex", alignItems: "center", justifyContent: "space-around"}}>
              <AirBnbLogo />
              <MetaBnbLogo className="meta" />
         </Box>
      
-      <Box className="link-cont" sx={{marginTop: "47px"}}>
+      <Box className="link-cont" sx={{marginTop: "47px", display:{sm:"none",md:"none", xs: "none", lg:"flex",} }}>
         <Link className="links">Home</Link>
         <Link className="links">Place to stay</Link>
         <Link className="links">NFTS</Link>

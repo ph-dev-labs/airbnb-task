@@ -5,3 +5,17 @@
   border: 1px solid #d7d7d7;
   border-radius: 15px;
 }
+
+.nft-i {
+  width: 260px;
+  height: 265px;
+  border: 1px solid #d7d7d7;
+  border-radius: 15px;
+  transform: translateX(16px);
+  margin-top: 10px;
+}
+.heart {
+  position: absolute;
+  transform: translateX(-16px);
+  margin-top: 17px;
+}

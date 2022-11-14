@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button, Grid, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import Home1 from "../../IMAGES/image-3.jpg";
 import Home2 from "../../IMAGES/image-4.jpg";
 import Home3 from "../../IMAGES/image-5.jpg";
@@ -11,6 +11,15 @@ import "./Homepage.style.css";
 import MetaHome from "../../components/metaverse-image/MetaHome";
 import Holder from "../../components/Logo-holder/Holder";
 import Nft from "../../components/Cards/Nft";
+import Nft1 from "../../IMAGES/Frame-1511.svg";
+import Nft2 from "../../IMAGES/Frame-1512.svg";
+import Nft3 from "../../IMAGES/Frame-1513.svg";
+import Nft4 from "../../IMAGES/Frame-151.svg";
+import Nft5 from "../../IMAGES/Frame-1515.svg";
+import Nft6 from "../../IMAGES/Frame-1516.svg";
+import Nft7 from "../../IMAGES/Frame-1517.svg";
+import Nft8 from "../../IMAGES/Frame-1518.svg";
+import Skew1 from "../../IMAGES/Frame-595460000.svg"
 
 const Homepage = () => {
   return (
@@ -23,12 +32,17 @@ const Homepage = () => {
       <Box
         sx={{
           display: "flex",
-          flexDirection: {lg:"row", sm: "column", xs: "column"},
+          flexDirection: { lg: "row", sm: "column", xs: "column" },
           justifyContent: "space-evenly",
         }}
         mt={5}
       >
-        <Box sx={{ width: {lg:"60%", sm: "100%", xs: "100%", md: "100%"}, transform: "translateX(30px)" }}>
+        <Box
+          sx={{
+            width: { lg: "60%", sm: "100%", xs: "100%", md: "100%" },
+            transform: "translateX(30px)",
+          }}
+        >
           <Typography variant="h4" component="h5" className="desc-title">
             Rent a Place away from Home in the Metaverse
           </Typography>
@@ -51,9 +65,14 @@ const Homepage = () => {
           sx={{
             display: "flex",
             flexDirection: "row",
-            justifyContent: {lg: "space-around", sm: "space-evenly", xs: "space-evenly", md: "space-evenly"},
+            justifyContent: {
+              lg: "space-around",
+              sm: "space-evenly",
+              xs: "space-evenly",
+              md: "space-evenly",
+            },
             alignContent: "center",
-            transform:{lg: "translateX(-70px)"},
+            transform: { lg: "translateX(-70px)" },
             height: "480px",
           }}
           mt={5}
@@ -100,32 +119,98 @@ const Homepage = () => {
             margin: "auto",
           }}
         >
-          <Grid container spacing={1} rowSpacing={1} sx={{alignItems: "center"}}>
-            <Grid item sm={12} md={6} lg={3}>
-              <Nft />1
-            </Grid>
-            <Grid item sm={12} md={6} lg={3}>
-              <Nft />2
-            </Grid>
-            <Grid item sm={12} md={4} lg={3}>
-              <Nft />3
-            </Grid>
-            <Grid item sm={12} md={4} lg={3}>
-              <Nft />4
-            </Grid>
-            <Grid item sm={12} md={4} lg={3}>
-              <Nft />5
-            </Grid>
-            <Grid item sm={12} md={4} lg={3}>
-              <Nft />6
-            </Grid>
-            <Grid item sm={12} md={4} lg={3}>
-              <Nft />7
-            </Grid>
-            <Grid item sm={12} md={4} lg={3}>
-              <Nft />8
-            </Grid>
-          </Grid>
+          <Box sx={{ alignItems: "center" }} className="grid-cont">
+            <Nft
+              nft={Nft1}
+              location="King Desert"
+              price="1MBT per night"
+              distance="2345 km away"
+              duration="available for 2weeks stay"
+            />
+            <Nft
+              nft={Nft2}
+              location="King Desert"
+              price="1MBT per night"
+              distance="2345 km away"
+              duration="available for 2weeks stay"
+            />
+            <Nft
+              nft={Nft3}
+              location="King Desert"
+              price="1MBT per night"
+              distance="2345 km away"
+              duration="available for 2weeks stay"
+            />
+            <Nft
+              nft={Nft4}
+              location="King Desert"
+              price="1MBT per night"
+              distance="2345 km away"
+              duration="available for 2weeks stay"
+            />
+            <Nft
+              nft={Nft5}
+              location="King Desert"
+              price="1MBT per night"
+              distance="2345 km away"
+              duration="available for 2weeks stay"
+            />
+            <Nft
+              nft={Nft6}
+              location="King Desert"
+              price="1MBT per night"
+              distance="2345 km away"
+              duration="available for 2weeks stay"
+            />
+            <Nft
+              nft={Nft7}
+              location="King Desert"
+              price="1MBT per night"
+              distance="2345 km away"
+              duration="available for 2weeks stay"
+            />
+            <Nft
+              nft={Nft8}
+              location="King Desert"
+              price="1MBT per night"
+              distance="2345 km away"
+              duration="available for 2weeks stay"
+            />
+          </Box>
+        </Box>
+      </Box>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "space-evenly",
+          backgroundImage:
+            "linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%)",
+          border: "1px solid #000000",
+          height: "774px"
+        }}
+      >
+        <Box sx={{ width: "30%", margin: "auto", transform: "translateX(45px)"}}>
+          <Typography className="learn-text">
+            Discover our NFT gift cards collection. Loyal customers gets amazing
+            gift cards which are traded as NFTs. These NFTs gives our cutomer
+            access to loads of our exclusive services.
+          </Typography>
+          <Button
+            variant="contained"
+            sx={{
+              backgroundImage:
+                "linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%)",
+              borderRadius: "8px",
+              height: "48px",
+              width: "156px"
+            }}
+          >
+           <Typography className="learn-btn">Learn more</Typography>
+          </Button>
+        </Box>
+        <Box sx={{ width: "55%",  margin: "auto"}}>
+          <img src={Skew1} className="size-i" />
         </Box>
       </Box>
     </Box>

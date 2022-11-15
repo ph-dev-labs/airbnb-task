@@ -35,3 +35,25 @@ line-height: 35px !important;
 color: #F1F3F9 !important;
 transform: translateY(20px);
 }
+
+@media screen and (max-width: 600px) {
+    .fott {
+        display: flex !important;
+        flex-direction: row!important;
+        justify-content: space-around !important;
+    }
+    .footer-socials {
+        width: 100px !important;
+    }
+    .losg {
+        width: 96px !important;
+    }
+    .socials {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 70px;
+        margin-bottom: 30px;
+    }
+}

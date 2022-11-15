@@ -45,11 +45,12 @@ const Modal = (props) => {
             color: "#333333",
             textAlign: "center",
           }}
+          className="x"
         >
           X
         </Typography>
       </Box>
-      <Box sx={{width: "598px", height: "0px", border: "1px solid #CFD8DC"}}>
+      <Box sx={{width: "100%", height: "0px", border: "1px solid #CFD8DC"}}>
       </Box>
       <Box>
         <Typography

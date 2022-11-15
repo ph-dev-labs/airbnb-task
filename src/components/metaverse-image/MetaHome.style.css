@@ -4,3 +4,12 @@
   border-radius: 15px;
   margin: 5px;
 }
+
+@media screen  and (max-width: 480px) {
+  .meta-card {
+    width: 200px;
+    height: 156px;
+    border-radius: 15px;
+    margin: 5px;
+  }
+}

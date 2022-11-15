@@ -17,6 +17,7 @@ const Footer = () => {
         justifyContent: "space-evenly",
         height: "322px",
       }}
+      className="fott"
     >
       <Box
         sx={{
@@ -26,8 +27,8 @@ const Footer = () => {
           height: "230px"
         }}
       >
-        <Box sx={{transform: "translateY(-30px)"}}>
-          <img src={Logo} alt="FOOTER_LOGO" />
+        <Box sx={{transform: "translateY(-30px)"}} className="losg">
+          <img src={Logo} alt="FOOTER_LOGO" className="losg" />
         </Box>
         <Box className="footer-socials">
           <Box className="socials">

@@ -34,7 +34,7 @@ const Homepage = (props) => {
       <Box
         sx={{
           display: "flex",
-          flexDirection:  "row",
+          flexDirection: "row",
           justifyContent: "space-evenly",
         }}
         mt={5}
@@ -80,6 +80,7 @@ const Homepage = (props) => {
             height: "480px",
           }}
           mt={5}
+          className="meta-home-cont2"
         >
           <Box
             className="meta-home-cont"
@@ -102,6 +103,7 @@ const Homepage = (props) => {
             transform: "translateX(400px)",
             marginTop: "-230px",
           }}
+          className="moder"
         >
           <Modal onclick={props.onclick} />
         </Box>
@@ -135,6 +137,7 @@ const Homepage = (props) => {
             height: "968px",
             margin: "auto",
           }}
+          className="nw"
         >
           <Box sx={{ alignItems: "center" }} className="grid-cont">
             <Nft
@@ -165,6 +168,8 @@ const Homepage = (props) => {
               distance="2345 km away"
               duration="available for 2weeks stay"
             />
+          </Box>
+          <Box className="grid-cont2">
             <Nft
               nft={Nft5}
               location="King Desert"
@@ -193,7 +198,6 @@ const Homepage = (props) => {
               distance="2345 km away"
               duration="available for 2weeks stay"
             />
-
           </Box>
         </Box>
       </Box>
@@ -206,11 +210,13 @@ const Homepage = (props) => {
             "linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%)",
           border: "1px solid #000000",
           height: "774px",
+          width: "100%",
         }}
         className="p-bckg"
       >
         <Box
           sx={{ width: "30%", margin: "auto", transform: "translateX(45px)" }}
+          className="learn-cont"
         >
           <Typography className="learn-text">
             Discover our NFT gift cards collection. Loyal customers gets amazing
@@ -230,8 +236,8 @@ const Homepage = (props) => {
             <Typography className="learn-btn">Learn more</Typography>
           </Button>
         </Box>
-        <Box sx={{ width: "55%", margin: "auto" }}>
-          <img src={Skew1} className="size-i"  alt="skew"/>
+        <Box sx={{ width: "55%", margin: "auto" }} className="skew">
+          <img src={Skew1} className="size-i" alt="skew" />
         </Box>
       </Box>
     </Box>

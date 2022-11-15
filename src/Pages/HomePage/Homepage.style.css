@@ -70,7 +70,7 @@
   margin-top: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr, 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 25px;
 }
 .learn-text {
@@ -111,4 +111,55 @@
   border-radius: 10px !important;
   width: 704px !important;
   height: 574.85px !important;
+}
+@media screen and (min-width: 600px) {
+  .homepage {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100%;
+    height: 100%;
+  }
+
+  .intro-sec {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-evenly !important;
+    align-items: center !important;
+    justify-content: center !important;
+    align-content: center !important;
+  }
+
+  .inro-text {
+    width: 100% !important;
+    justify-self: center !important;
+  }
+  .search-field {
+    width: 200px !important;
+    margin-left: 90px;
+  }
+  .grid-cont {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .adv-text {
+    text-align: center !important;
+    font-weight: 700 !important;
+    font-size: 28px !important;
+    line-height: 60px !important;
+    color: #000000 !important;
+  }
+
+  .holders {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+
+  .p-bckg {
+    
+  }
 }

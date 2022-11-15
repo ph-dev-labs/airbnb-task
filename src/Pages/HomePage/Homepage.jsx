@@ -29,20 +29,23 @@ const Homepage = (props) => {
         width: "100%",
         height: "100%",
       }}
+      className="homepage"
     >
       <Box
         sx={{
           display: "flex",
-          flexDirection: { lg: "row", sm: "column", xs: "column" },
+          flexDirection:  "row",
           justifyContent: "space-evenly",
         }}
         mt={5}
+        className="intro-sec"
       >
         <Box
           sx={{
             width: { lg: "60%", sm: "100%", xs: "100%", md: "100%" },
             transform: "translateX(30px)",
           }}
+          className="inro-text"
         >
           <Typography variant="h4" component="h5" className="desc-title">
             Rent a Place away from Home in the Metaverse
@@ -115,6 +118,7 @@ const Homepage = (props) => {
           backgroundImage:
             "linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%)",
         }}
+        className="holders"
       >
         <Holder logo={Logo1} title="MBToken" caribbean />
         <Holder logo={Logo2} title="METAMASK" />
@@ -189,6 +193,7 @@ const Homepage = (props) => {
               distance="2345 km away"
               duration="available for 2weeks stay"
             />
+
           </Box>
         </Box>
       </Box>
@@ -202,6 +207,7 @@ const Homepage = (props) => {
           border: "1px solid #000000",
           height: "774px",
         }}
+        className="p-bckg"
       >
         <Box
           sx={{ width: "30%", margin: "auto", transform: "translateX(45px)" }}

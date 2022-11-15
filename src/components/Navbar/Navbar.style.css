@@ -15,7 +15,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 30px;
   gap: 60px;
   width: 626px;
   height: 23px;
@@ -42,5 +41,6 @@
   text-align: center;
   color: #ffffff;
   height: 48px;
-  width: 170px;
+  width: 240px;
 }
+

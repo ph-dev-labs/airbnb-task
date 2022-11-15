@@ -4,11 +4,12 @@ import "./Nft.styles.css";
 import Heart from "../../IMAGES/heartheart.svg";
 import Star from "../../IMAGES/Star-2start.svg";
 
+
 const Nft = (props) => {
   return (
-    <Box className="nft-holder">
+    <Box className={props.half ? "half" : "nft-holder"}>
       <Box>
-        <img src={props.nft} alt="META-HOME" className="nft-i" />
+        <img src={props.nft} alt="META-HOME" className={props.half ? "half" : "nft-i"} />
         <img src={Heart} alt="HEART" className="heart" />
       </Box>
       <Box

@@ -1,0 +1,45 @@
+.modal-box {
+  position: absolute;
+  width: 600px;
+  height: 326px;
+  background-color: #ffffff;
+  border-radius: 16px;
+}
+
+.wallet-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px;
+}
+
+.hol {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 536px;
+  height: 68px;
+  background-color: #f8f9fa;
+  border: 1px solid #cfd8dc;
+  border-radius: 12px;
+}
+
+.m {
+  font-family: "Sora" !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 18px !important;
+  line-height: 23px !important;
+  color: #000000 !important;
+  transform: translateX(-90px);
+}
+
+.meta {
+  transform: translateX(-35px);
+}
+.chev {
+    transform: translateX(-28px);
+    cursor: pointer;
+}

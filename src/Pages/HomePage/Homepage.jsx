@@ -8,6 +8,7 @@ import Logo1 from "../../SVG/Group-59536.svg";
 import Logo2 from "../../SVG/Group-4038.svg";
 import Logo3 from "../../SVG/logo.svg";
 import "./Homepage.style.css";
+import Modal from "../../components/Modal/Modal";
 import MetaHome from "../../components/metaverse-image/MetaHome";
 import Holder from "../../components/Logo-holder/Holder";
 import Nft from "../../components/Cards/Nft";
@@ -19,9 +20,9 @@ import Nft5 from "../../IMAGES/Frame-1515.svg";
 import Nft6 from "../../IMAGES/Frame-1516.svg";
 import Nft7 from "../../IMAGES/Frame-1517.svg";
 import Nft8 from "../../IMAGES/Frame-1518.svg";
-import Skew1 from "../../IMAGES/Frame-595460000.svg"
+import Skew1 from "../../IMAGES/Frame-595460000.svg";
 
-const Homepage = () => {
+const Homepage = (props) => {
   return (
     <Box
       sx={{
@@ -90,6 +91,18 @@ const Homepage = () => {
           </Box>
         </Box>
       </Box>
+      {props.modal && (
+        <Box
+          sx={{
+            position: "absolute",
+            zIndex: "1000",
+            transform: "translateX(400px)",
+            marginTop: "-230px",
+          }}
+        >
+          <Modal onclick={props.onclick} />
+        </Box>
+      )}
       <Box
         sx={{
           width: "100%",
@@ -187,10 +200,12 @@ const Homepage = () => {
           backgroundImage:
             "linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%)",
           border: "1px solid #000000",
-          height: "774px"
+          height: "774px",
         }}
       >
-        <Box sx={{ width: "30%", margin: "auto", transform: "translateX(45px)"}}>
+        <Box
+          sx={{ width: "30%", margin: "auto", transform: "translateX(45px)" }}
+        >
           <Typography className="learn-text">
             Discover our NFT gift cards collection. Loyal customers gets amazing
             gift cards which are traded as NFTs. These NFTs gives our cutomer
@@ -203,14 +218,14 @@ const Homepage = () => {
                 "linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%)",
               borderRadius: "8px",
               height: "48px",
-              width: "156px"
+              width: "156px",
             }}
           >
-           <Typography className="learn-btn">Learn more</Typography>
+            <Typography className="learn-btn">Learn more</Typography>
           </Button>
         </Box>
-        <Box sx={{ width: "55%",  margin: "auto"}}>
-          <img src={Skew1} className="size-i" />
+        <Box sx={{ width: "55%", margin: "auto" }}>
+          <img src={Skew1} className="size-i"  alt="skew"/>
         </Box>
       </Box>
     </Box>
